@@ -1,0 +1,88 @@
+﻿<ons-page var="myPage">
+    <ons-navigator>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <input type="text" class="text-input--underbar" placeholder="Κωδ. Πελάτη" value="" ng-model="product.Code">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="date" class="text-input--underbar" placeholder="Ημερ. παράδοσης" value="" ng-model="product.Livraison">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="text" class="text-input--underbar" placeholder="Σημειώσεις (δημόσιες)" value="" ng-model="product.NotesPub">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="text" class="text-input--underbar" placeholder="Σημειώσεις (προσωπικές)" value="" ng-model="product.NotesPer">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Συνθήκες Πληρωμής
+                </td>
+                <td colspan="2">
+                    <select ng-model="product.Cond">
+                        <option value="1">Άμεση</option>
+                        <option value="2">30 Μέρες</option>
+                        <option value="3">30 Μέρες (τέλος μήνα)</option>
+                        <option value="4">60 Μέρες</option>
+                        <option value="5">60 Μέρες (τέλος μήνα)</option>
+                        <option value="6">Κατόπιν Παραγγελίας</option>
+                        <option value="7">Αποστολή</option>
+                        <option value="8">50-50</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Τύπος Πληρωμής
+                </td>
+                <td colspan="2">
+                    <select ng-model="product.mode">
+                        <option value="1">TIP</option>
+                        <option value="2">Τραπεζική Κατάθεση</option>
+                        <option value="3">Εντολή Τράπεζας</option>
+                        <option value="4">Μετρητά</option>
+                        <option value="6">Πιστωτική Κάρτα</option>
+                        <option value="7">Επιταγή</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Καθυστέρηση Διαθεσιμότητα
+                </td>
+                <td colspan="2">
+                    <select ng-model="product.Avail">
+                        <option value="1">Άμεση</option>
+                        <option value="2">1 Εβδομάδα</option>
+                        <option value="3">2 Εβδομάδες</option>
+                        <option value="4">3 Εβδομάδες</option>
+                    </select>
+                </td>
+            </tr>
+            <tr ng-repeat="item in product track by $index">
+                <td>{{item.label}}</td>
+                <td>{{item.price}}</td>
+                <td><input type="number" class="text-input--underbar" placeholder="Ποσότητα" ng-value="0" ng-model="product[$index].product.quantity"></td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <ons-button modifier="large" class="login-button" ng-click="newOrder(client.rowid)">Προσθήκη</ons-button>
+                </td>
+            </tr>
+        </table>
+        
+    </ons-navigator>
+</ons-page>
+<script>
+        ons.ready(function () {
+            myPage.getDeviceBackButtonHandler().disable();
+        });
+</script>

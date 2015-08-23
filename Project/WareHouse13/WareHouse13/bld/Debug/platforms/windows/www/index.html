@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="WareHouse">
+<head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>WareHouse</title>
+
+    <!-- WareHouse references -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="../onsen-css-components-blue-basic-theme.css">
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css" />
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.min.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link href="css/clients.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/productsMain.css" />
+    <link href="css/companyProfilecss.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.1.min.css" />
+
+    <script src="lib/onsen/js/angular/angular.js"></script>
+    <script src="lib/onsen/js/angular/angular-animate.js"></script>
+    <script src="lib/onsen/js/angular/angular-sanitize.js"></script>
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <!--<script>ons.bootstrap();</script>-->
+    <script src="scripts/login.js"></script>
+    <script src="scripts/app.js"></script>
+
+</head>
+<body>
+
+    <ons-page ng-controller="LogInController" collapse="portrait" >
+        <ons-navigator>
+            <div class="login-form">
+                <input type="text" class="text-input--underbar" placeholder="Username" value="" ng-model="user">
+                <input type="password" class="text-input--underbar" placeholder="Password" value="" ng-model="pwd">
+                <br><br>
+                <ons-button modifier="large" class="login-button" ng-click="login(user,pwd)">Log In</ons-button>
+                <br><br>
+            </div>
+        </ons-navigator>
+    </ons-page>
+
+    <ons-template id="menu.html">
+        <ons-page ng-controller="menuController" on-device-backbutton="">
+            <ons-sliding-menu main-page="main.html"
+                              menu-page="menuList.html"
+                              side="left"
+                              max-slide-distance="55%"
+                              var="menu">
+            </ons-sliding-menu>
+
+
+            <ons-template id="menuList.html">
+                <ons-toolbar>
+                    <div class="center">Menu</div>
+                </ons-toolbar>
+                <ons-list>
+                    <ons-list-item modifier="chevron" onclick="menu.setMainPage('main.html', {closeMenu: true})">
+                        Αρχική
+                    </ons-list-item>
+                    <ons-list-item modifier="chevron" onclick="menu.setMainPage('profile.html', {closeMenu: true})" ng-click="profile()">
+                        Προφίλ Χρήστης
+                    </ons-list-item>
+                    <ons-list-item modifier="chevron" onclick="menu.setMainPage('clients.html', { closeMenu: true })" ng-click="clients()">
+                        Πελατολόγιο
+                    </ons-list-item>
+                    <ons-list-item modifier="chevron" onclick="menu.setMainPage('companyProfile.html', { closeMenu: true })" ng-click="companyProfile()">
+                        Προφίλ Εταιρίας
+                    </ons-list-item>
+                    <ons-list-item modifier="chevron" ng-click="AppExit()">
+                        Έξοδος
+                    </ons-list-item>
+                </ons-list>
+            </ons-template>
+        </ons-page>
+    </ons-template>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

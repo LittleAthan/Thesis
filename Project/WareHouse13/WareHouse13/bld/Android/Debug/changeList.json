@@ -1,0 +1,31 @@
+{
+  "changedFilesIos": [
+    "scripts\\login.js",
+    "newOrder.html",
+    "index.html",
+    "main.html",
+    "companyProfile.html",
+    "profile.html",
+    "product.html",
+    "config.xml",
+    "clients.html",
+    "clientprofile.html",
+    "res\\icons\\android\\icon-36-ldpi.png",
+    "res\\icons\\android\\icon-48-mdpi.png",
+    "res\\icons\\android\\icon-72-hdpi.png",
+    "res\\icons\\android\\icon-96-xhdpi.png",
+    "res\\screens\\android\\screen-hdpi-portrait.png",
+    "res\\screens\\android\\screen-hdpi-landscape.png"
+  ],
+  "deletedFilesIos": [
+    "productsMain.html"
+  ],
+  "addedPluginsIos": [],
+  "deletedPluginsIos": [],
+  "changedFiles": [
+    "scripts\\login.js"
+  ],
+  "deletedFiles": [],
+  "addedPlugins": [],
+  "deletedPlugins": []
+}

@@ -1,0 +1,17 @@
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\debug\anycpu\resources.pri
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\debug\anycpu\AppxManifest.xml
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\debug\anycpu\CordovaApp.Windows80.build.appxrecipe
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\priconfig.xml
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\priconfig.xml.intermediate
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\layout.resfiles
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\layout.resfiles.intermediate
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\resources.resfiles
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\resources.resfiles.intermediate
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\pri.resfiles
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\pri.resfiles.intermediate
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\qualifiers.txt
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\qualifiers.txt.intermediate
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\MultipleQualifiersPerDimensionFound.txt
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\ProjectArchitectures.txt
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\package.map.txt
+C:\Project\WareHouse13\WareHouse13\bld\Debug\platforms\windows\build\windows80\bld\_pkginfo.txt

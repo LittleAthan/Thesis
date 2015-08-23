@@ -1,0 +1,61 @@
+﻿<ons-page var="myPage">
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="menu.toggleMenu()"><ons-icon icon="ion-navicon" style="font-size: 32px; width: 1em;"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Home</div>
+    </ons-toolbar>
+
+    <ons-list>
+        <table width="100%">
+            <tr>
+                <td colspan="2" width="100%">
+                    <ons-list-header>Πληροφορίες Χρήστη</ons-list-header>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" width="100%">
+                    <table width="100%">
+                        <tr>
+                            <td width="100%">
+                                <ons-list-item modifier="chevron" onclick="menu.setMainPage('profile.html', {closeMenu: true})" ng-click="profile()">
+                                    <ons-icon icon="ion-person" size="20px"></ons-icon>
+                                    {{mainFirstname}} {{mainLastname}}
+                                </ons-list-item>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="33%">
+                    Τελευταία Σύνσεση
+                </td>
+                <td width="67%">
+                    {{mainDatelastlogin}}
+                </td>
+            </tr>
+            <tr>
+                <td width="33%">
+                    Προηγούμενη Σύνσεση
+                </td>
+                <td width="67%">
+                    {{mainDatepreviouslogin}}
+                </td>
+            </tr>
+            <tr>
+                <td width="33%">
+                    Δημιουργία Χρήστη
+                </td>
+                <td width="67%">
+                    {{mainDatec}}
+                </td>
+            </tr>
+        </table>
+    </ons-list>
+</ons-page>
+<script>
+        ons.ready(function () {
+            myPage.getDeviceBackButtonHandler().disable();
+        });
+</script>

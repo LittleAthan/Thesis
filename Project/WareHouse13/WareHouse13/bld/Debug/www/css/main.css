@@ -1,0 +1,45 @@
+﻿ons-list-item > ons-icon {
+  margin: 0 4px 0 0;
+  opacity: 0.8;
+}
+
+.list-item-action {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 20px;
+  opacity: 0.3;
+}
+
+.list-item-action > ons-icon {
+  margin-top: 14px;
+}
+
+.list-item-note {
+  position: absolute;
+  right: 36px;
+  top: 0px;
+  font-size: 14px;
+}
+
+.list-item-note > .notification {
+  margin-top: 12px;
+}
+
+.lucent {
+  opacity: 0.4;
+}
+
+.maincol {
+  height: 60px;
+  line-height: 1;
+  left:0px;
+  width: 80%;
+}
+
+.numcol {
+  height: 60px;
+  line-height: 1;
+  left:0px;
+  width: 10%;
+}

@@ -1,0 +1,63 @@
+﻿<ons-page class="center" var="myPage">
+    
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="menu.toggleMenu()"><ons-icon icon="ion-navicon" style="font-size: 32px; width: 1em;"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Profile</div>
+    </ons-toolbar>
+
+    <div class="profile-card">
+
+        <img ng-src="{{profilePhoto}}" class="profile-image">
+        <div class="profile-name">{{profileFirstName}} {{profileLastName}}</div>
+        <div class="profile-id">{{profileSignature}}</div>
+        <div class="profile-desc">{{profileEmail}}</div>
+
+    </div>
+    <ons-list>
+        <ons-list-item>
+            <ons-row class="info-row">
+                <ons-col class="info-col">
+                    <div class="info-unit">Fax</div>
+                    <div class="info-num">{{profileOffice_fax}}</div>
+                </ons-col>
+                <ons-col class="info-col">
+                    <div class="info-unit">Επαγγελματικό</div>
+                    <div class="info-num">{{profileOffice_phone}}</div>
+                </ons-col>
+                <ons-col class="info-col">
+                    <div class="info-unit">Κινητό</div>
+                    <div class="info-num">{{profileUser_mobile}}</div>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+    </ons-list>
+    <table width="100%">
+        <tr>
+            <th width="50%" align="left" class="info-unit">Όνομα Χρήστη:</th>
+            <td align="left" width="50%" class="info-num">{{profileLogin}}</td>
+        </tr>
+        <tr>
+            <th width="50%" align="left" class="info-unit">Ημ/νία Δημιουργίας:</th>
+            <td align="left" width="50%" class="info-num">{{profileDateCreate}}</td>
+        </tr>
+        <tr>
+            <th width="50%" align="left" class="info-unit">Τελευταία Σύνδεση:</th>
+            <td align="left" width="50%" class="info-num">{{profileDatelastlogin}}</td>
+        </tr>
+        <tr>
+            <th width="50%" align="left" class="info-unit">Προτελευταία Σύνδεση:</th>
+            <td align="left" width="50%" class="info-num">{{profileDatepreviouslogin}}</td>
+        </tr>
+        <tr>
+            <th width="50%" align="left" class="info-unit">Ημ/νία Τροπ/σης:</th>
+            <td align="left" width="50%" class="info-num">{{profileDateModified}}</td>
+        </tr>
+    </table>
+</ons-page>
+<script>
+        ons.ready(function () {
+            myPage.getDeviceBackButtonHandler().disable();
+        });
+</script>

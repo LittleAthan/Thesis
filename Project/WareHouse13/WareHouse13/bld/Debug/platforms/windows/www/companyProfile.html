@@ -1,0 +1,56 @@
+﻿<ons-page modifier="shop-details" var="myPage">
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="menu.toggleMenu()"><ons-icon icon="ion-navicon" style="font-size: 32px; width: 1em;"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Εταιρία</div>
+    </ons-toolbar>
+
+    <div style="background: url('{{clogo}}');  background-size: contain; background-repeat: no-repeat; background-color: black;" class="card">
+
+        <div class="card-name">{{cName}}</div>
+        <div class="card-desc">C.E.O. {{cManager}}<br>{{cNote}}</div>
+    </div>
+    <ons-list style="border-top: none">
+        <ons-list-item style="line-height: 1; padding: 0;">
+            <ons-row >
+                <ons-col class="caction-col">
+                    <div class="caction-icon">{{cFax}}</div>
+                    <div class="caction-label">Φαξ</div>
+                </ons-col>
+                <ons-col class="caction-col">
+                    <div class="caction-icon">{{cPhone}}</div>
+                    <div class="caction-label">Τηλέφωνο</div>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+    </ons-list>
+    <ons-list style="border-top: none">
+        <ons-list-item style="line-height: 1; padding: 0;">
+            <ons-row >
+                <ons-col class="caction-col">
+                    <div class="caction-icon">{{cEmail}}</div>
+                    <div class="caction-label">e-Mail</div>
+                </ons-col>
+                <ons-col class="caction-col">
+                    <div class="caction-icon">{{cUrl}}</div>
+                    <div class="caction-label">URL</div>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+    </ons-list>
+
+    <ons-list style="margin-top: 12px;">
+        <ons-list-item>
+            <div class="prop-desc">
+                <ons-icon icon="fa-map-marker"></ons-icon>
+                {{cAddress}} {{cTK}} {{cTown}} {{cState}}
+            </div>
+        </ons-list-item>
+    </ons-list>
+</ons-page>
+<script>
+        ons.ready(function () {
+            myPage.getDeviceBackButtonHandler().disable();
+        });
+</script>
